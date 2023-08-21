@@ -1,0 +1,175 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: monospace;
+}
+
+h5 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,h5,h2{   
+    text-align: center;
+}
+.intro {
+    min-height: 100vh;
+    background-image: url("https://i.postimg.cc/7hJ62513/K-Kamarajar.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-color: #f1eafa;
+}
+
+.timeline {
+    width: 100%;
+    display: flex;
+    background: linear-gradient(259deg, #252390, #03010a);
+    height: 100vh;
+}
+.video{
+    width: 100%;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: sans-serif;
+    margin-top: 2rem;   
+    color: whitesmoke;
+}
+.achievements{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #9dbfe3, #3585a06b);
+}
+.achievements .wrapper{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.display{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #252390;
+}
+
+button{
+    font-size: 1.5rem;  
+    width: 20rem;
+    cursor: pointer;
+    background-color: #98ffa1;
+    border-radius: 10%;
+    height: 60px;
+    border: none;
+}
+button:hover{
+    transition: 1s all ease-in-out;
+    background-color: #fffb10;
+}
+.display:hover{
+    color: #000000;
+    transition: 1s all ease-out;
+    text-decoration: underline;
+}
+
+.images{
+    max-width: 500px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: auto;
+}
+.images .slider{
+    width: 31rem;
+    object-fit: cover;
+    height: 250px;
+    border-radius: 10%;
+    height: 20rem;
+    box-shadow: 0px 1px 13px 1px #148ed8;
+}
+h2{
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 1.8rem;
+    color: black;
+}
+#head{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.9rem;
+    font-weight:500 ;
+}
+
+.nextBut,.preBut{
+    cursor: pointer;
+    border: none;
+    padding: 0px;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(3, 2, 2, 0.5);
+}
+.nextBut{
+    position: absolute;
+    z-index: 15;
+    right: 0px;
+}
+.preBut{
+    position: absolute;
+    z-index: 10;
+    left: 0px;
+}
+.nextBut:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.preBut:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+footer{
+    min-height: 30vh;
+    background-color: #03010a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes fade {
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+
+    }
+}
+@keyframes fades{
+    0%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media(max-width:890px){
+.images .slider{
+    width: 32rem;
+}
+}
+@media(max-width:500px){
+.images .slider{
+    width: 19rem;
+}
+}
+@media(max-width:370px){
+.images .slider{
+    width: 15rem;
+}
+}
