@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
+
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: beige;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    width: 50%;
+    min-width: 440px;
+    min-height: 100px;
+    margin: auto;
+}
+
+.addTask {
+    position: relative;
+    padding: 2rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.addTask input {
+    width: 80%;
+    height: 50px;
+    position: relative;
+    border: solid 1px black;
+    color: rgb(5, 7, 7);
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    margin: auto;
+}
+
+.addTask button {
+    position: relative;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    height: 40px;
+    border-radius: 10%;
+    outline: none;
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 1rem;
+    align-self: center;
+    background-color: rgb(0, 8, 43);
+    color: rgb(255, 170, 13);
+}
+
+#newTask {
+    position: relative;
+    width: 100%;
+    padding: 0px;
+}
+
+.addTask button:hover {
+    background-color: rgb(68, 255, 22);
+    transition: all 1s ease-out;
+    color: white;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #d9e1e8;
+    min-height: 65px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    border: solid 1px #031c33;
+}
+
+.task li {
+    margin-right: 0.2rem;
+    margin-left: 1.9rem;
+    word-wrap: break-word;
+}
+
+.del {
+    background-color: rgb(1, 25, 71);
+    width: 4rem;
+    height: 30px;
+    right: 0%;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: greenyellow;
+    align-self: flex-start;
+}
+
+.task .inner {
+    max-width: 100%;
+}
+
+.del:hover {
+    background-color: rgb(255, 33, 25);
+    color: white;
+    transition: all 1s ease-in-out;
+}
+
+.task span {
+    font-size: 0.9rem;
+    color: #2615ff;
+}
