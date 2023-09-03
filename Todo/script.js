@@ -41,5 +41,6 @@ addButton.addEventListener('click', () => {
             div.remove();
             localStorage.removeItem(div.id);
         })
+       inputVal.value = '';
     }
 })
