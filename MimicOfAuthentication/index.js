@@ -65,7 +65,6 @@ const isLogin = (req, res, next) => {
     next();
 }
 app.get("/", (req, res) => {
-    console.log(req.session, req.sessionID);
     res.render("home")
 })
 app.get("/login", (req, res) => {
@@ -114,7 +113,6 @@ app.post("/signup", async (req, res) => {
         res.redirect('/signup');
     }
     else if (found) {
-        console.log(found);
         req.flash('error', "Already Registered!!!");
         res.redirect("/signup");
     } else {
@@ -128,7 +126,7 @@ app.post("/signup", async (req, res) => {
 });
 app.get('/signout', (req, res) => {
     req.flash('success', 'Successfully log out!!!');
-    req.session = null;
+    delete req.session.user = null;
     return res.redirect('/')
 
 })
