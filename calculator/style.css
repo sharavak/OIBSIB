@@ -1,0 +1,119 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right,#d4d4d4,grey)
+}
+.head{
+    width: 25.8rem;
+    height: 35rem;
+    background-color: rgba(1, 6, 17, 0.829);
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head .wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(7, 8, 8, 0.308);
+    width: 24.8rem;
+    border-radius: 10%;
+    height: 33rem;
+    justify-content: center;
+}
+.calc{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center ;
+    align-content: space-evenly;
+    max-width: 90%;
+    height: 27rem;
+}
+.head .wrapper #input{
+    height: 5rem;
+    cursor: none;
+    border: none;
+    border-radius: 10%;
+    width:85%;
+    text-align: right;
+    font-size: 1.9rem;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #30501b
+}
+.calc button{
+    width: 4.1rem;
+    height: 2.9rem;
+    border-radius: 10%;
+    border: none;
+    cursor: pointer;
+    background:linear-gradient(28deg, #525a65,#464b52);
+    color: white;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    box-shadow: inset 2px 1px 1px black,
+            inset 1px 2px 1px black,
+            inset 1px 2px 1px black,
+            inset 1px 2px 1px black;
+}
+.calc .equal{
+    width: 9rem;
+}
+.calc .clear{
+    width: 9rem;
+}
+.calc button:active {
+    transform: translate(1px,1px);
+    box-shadow: 1px 2px 3px rgb(0, 0, 0);
+
+}
+@media(max-width:430px){
+    .head{
+    max-width: 24rem;
+}
+.head .wrapper{
+     max-width: 23.8rem;
+}
+.calc{
+    max-width: 83%;
+}
+.calc button{
+    width: 3.5rem;
+}
+.calc .clear,.calc .equal{
+    width: 8rem;
+}
+}
+@media(max-width:390px){
+    .head{
+    max-width: 21rem;
+}
+.head .wrapper{
+     max-width: 19rem;
+}
+.calc{
+    max-width: 100%;
+}
+.calc button{
+    width: 3.5rem;
+}
+.calc .clear,.calc .equal{
+    width: 7rem;
+}
+}
+@media(max-height:480px){
+    .head{
+        height: 28rem;
+    }
+    .head .wrapper{
+        height: 26rem
+}
+}
